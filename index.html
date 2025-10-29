@@ -91,7 +91,7 @@
       cursor: pointer;
     }
     .clear-btn:hover {
-      background-color: #e68a00;
+      background-color: #c47b0e;
     }
   </style>
 </head>
@@ -108,11 +108,7 @@
   </div>
 
   <script>
-    const taskInput = document.getElementById("taskInput");
-    const addBtn = document.getElementById("addBtn");
-    const taskList = document.getElementById("taskList");
-    const clearBtn = document.getElementById("clearBtn");
-
+    
     window.addEventListener("load", () => {
       const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
       tasks.forEach(task => addTaskToDOM(task.text, task.done));
